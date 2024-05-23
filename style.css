@@ -1,6 +1,6 @@
 /* CSS GLOBAL */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,43 +12,51 @@
     font-family: 'Poppins', sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
-section{
+
+section {
     padding: 30px;
 }
-.section-heading h2{
+
+.section-heading h2 {
     color: #069a77;
     font-size: 18px;
     margin: 10px 0;
 }
-.coach{
+
+.coach {
     display: flex;
     align-items: center;
 }
-.coach img{
+
+.coach img {
     width: 50px;
     border-radius: 100%;
     object-fit: cover;
 }
-.coach .infos{
+
+.coach .infos {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-.infos h5{
+
+.infos h5 {
     font-size: 14px;
 }
-.infos span{
+
+.infos span {
     display: inline-block;
     font-size: 12px;
     color: rgb(39, 39, 39);
 }
+
 /* NAVIGATION */
 
 /* HEADER STYLE */
-header{
+header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,44 +68,49 @@ header{
     top: 0;
     z-index: 1000;
 }
-header .logo img{
+
+header .logo img {
     width: 100px;
     height: auto;
 }
 
 /* MAIN SECTION */
 
-main{
-    margin: 30px 90px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
+main {
+    margin: 30px 50px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
 }
 
 /* NAVBAR STYLE */
-nav{
-    max-width: 350px;
+nav {
+    /* max-width: 300px; */
     height: 450px;
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 }
+
 nav ul li {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
-nav a i{
+
+nav a i {
     font-size: 25px;
     margin: 0 10px;
 }
-nav ul li a{
+
+nav ul li a {
     font-size: 15px;
     display: inline-block;
     text-transform: capitalize;
@@ -106,13 +119,15 @@ nav ul li a{
     padding: 10px;
     border-radius: 0 30px 30px 0;
 }
-nav ul li a:hover, .active{
+
+nav ul li a:hover,
+.active {
     color: #069a77;
     background-color: #d3f4ec;
 }
 
 /* MAIN CONTAINER STYLE */
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     /* flex-grow: 2; */
@@ -120,18 +135,20 @@ nav ul li a:hover, .active{
 }
 
 
-.coachs{
+.coachs {
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
-.coach-container{
-    display: flex;
-    flex-wrap: wrap;
 
+.coach-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-gap: 10px;
 }
-.coach-container .coach{
+
+.coach-container .coach {
     margin: 20px;
 }
 
@@ -152,76 +169,116 @@ nav ul li a:hover, .active{
 
 
 /* CONTACT STYLE */
-.contact-container{
-    display: flex;
+.contact-container {
+    /* display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    grid-gap: 20px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     padding: 15px;
     background-color: #d3f4ec;
     margin-bottom: 15px;
     border-radius: 5px;
-    /* width: 100%; */
-}
-form .name-field{
     width: 100%;
 }
-/* form .name-field input{
-    width: 48%;
-} */
-.contact-right{
+
+form .name-field {
+    width: 100%;
+}
+
+form .name-field input {
+    width: 49%;
+}
+
+.contact-right {
     display: flex;
     flex-direction: column;
 }
-.contact-right h2{
+
+.contact-right div {
+    margin-bottom: 37px;
+}
+
+.contact-right h2 {
     font-size: 20px;
     margin-bottom: 0;
 }
-.contact-right p{
+
+.contact-right p {
     font-size: 14px;
+    color: rgb(142, 142, 142);
+
+}
+
+.contact-right span {
+    font-size: 14px;
+    color: rgb(142, 142, 142);
+
+}
+
+.icon-contact {
+    display: flex;
+}
+
+.icon-contact i {
+    font-size: 25px;
+    color: #069a77;
+    margin-right: 10px;
 }
 
 
 
 /* FOOTER STYLE */
-.footer{
+.footer {
     background-color: #069a77;
     padding: 30px 50px;
     color: white;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.footer-box{
+
+.footer-box {
     display: flex;
     flex-direction: column;
     margin: 15px 0;
 }
-.footer-box h2{
+
+.footer-box h2 {
     font-size: clamp(14px, 4vw, 18px);
     margin-bottom: 20px;
 }
-.footer-box p{
+
+.footer-box p {
     font-size: 12px;
     color: rgb(240, 240, 240);
 }
-.footer-box a{
+
+.footer-box a {
     color: rgb(240, 240, 240);
     display: inline-block;
     margin-bottom: 10px;
     font-size: 15px;
 }
-.footer-box i{
+
+.footer-box i {
     color: #ff9800;
 }
-.copy{
+
+.copy {
     text-align: center;
     background-color: #08624d;
     padding: 15px;
@@ -230,21 +287,28 @@ form .name-field{
 
 /* BREAKPONIT */
 
-@media screen and (max-width: 770px){
-    main{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 10px 20px;
+@media screen and (max-width: 770px) {
+    section {
+        padding: 10px;
     }
-    nav{
-        margin: 10px 0;
+
+    main {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-gap: 10px;
+    }
+
+    nav {
+        width: 100%;
         height: 340px;
     }
-    nav ul{
+
+    nav ul {
         margin-top: 10px;
     }
-    .footer{
-    padding: 20px 30px;
+
+    .footer {
+        padding: 20px 10px;
     }
 }
