@@ -86,7 +86,7 @@ main {
 /* NAVBAR STYLE */
 nav {
     /* max-width: 300px; */
-    height: 450px;
+    height: 550px;
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
@@ -139,12 +139,12 @@ nav ul li a:hover,
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .coach-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
     grid-gap: 10px;
 }
 
@@ -154,7 +154,46 @@ nav ul li a:hover,
 
 
 
-
+/* COURS STYLE */
+.cours{
+    border: 1px solid gainsboro;
+    border-radius: 0 0 10px 10px;
+}
+.cours-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 10px;
+}
+.cours-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.cours-box i{
+    font-size: 75px;
+    color: white;
+    background-color: #069a77;
+    padding: 10px 40px;
+    border-radius: 7px;
+}
+.cours-box .cours-infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.cours-infos h6{
+    font-size: 17px;
+}
+.cours-infos span{
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    margin-right: 5px;
+}
+.cours-infos p{
+    font-size: 14px;
+}
 
 
 
@@ -307,6 +346,7 @@ form .name-field input {
     nav ul {
         margin-top: 10px;
     }
+    
 
     .footer {
         padding: 20px 10px;
